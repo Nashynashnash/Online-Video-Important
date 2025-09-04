@@ -3,31 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Synergy Marine Group | Client Video</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Synergy Marine Group</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f4f6f9;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #003366;
+      width: 100%;
+      padding: 1rem 0;
+      text-align: center;
+      color: white;
+      font-size: 1.8rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    main {
+      margin: 2rem auto;
+      text-align: center;
+    }
+
+    video {
+      width: 600px;       /* fixed width */
+      max-width: 90%;     /* shrink on small screens */
+      height: auto;       /* keeps correct aspect ratio */
+      border-radius: 12px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Synergy Marine Group</h1>
-      <p class="subtitle">For Our Valued Client</p>
-    </header>
 
-    <main>
-      <div class="video-wrapper">
-        <video controls>
-          <source src="Synergy-Norden.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </main>
+  <header>
+    Synergy Marine Group
+  </header>
 
-    <footer>
-      <p>&copy; 2025 Synergy Marine Group | Confidential</p>
-    </footer>
-  </div>
-</body>
-</html>
-
-
+  <main>
+    <!-- Only width, no fixed height -->
+    <video controls>
+      <source src="Synergy-Norden.mp4" type="video/mp4">
 
